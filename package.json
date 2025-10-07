@@ -1,0 +1,16 @@
+{
+  "name": "invoice-po-matcher",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run dev\"",
+    "install:all": "cd backend && npm i && cd ../frontend && npm i"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "pdf-parse": "^2.1.7",
+    "tesseract.js": "^6.0.1"
+  }
+}

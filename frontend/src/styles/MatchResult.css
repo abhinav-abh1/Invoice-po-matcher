@@ -1,0 +1,190 @@
+/* 🎨 Modern, clean result card design */
+
+.match-result-container {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  margin-top: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+  transition: all 0.3s ease;
+  border: 1px solid #e6e6e6;
+}
+
+.match-result-container:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.match-result-container h3 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  color: #2c3e50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.match-status {
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.match-status.matched {
+  background-color: #e8f8f2;
+  color: #27ae60;
+  border: 1px solid #27ae60;
+}
+
+.match-status.unmatched {
+  background-color: #fdeeee;
+  color: #e74c3c;
+  border: 1px solid #e74c3c;
+}
+
+.match-score {
+  background-color: #f3f7fb;
+  border-radius: 6px;
+  padding: 8px 14px;
+  display: inline-block;
+  font-weight: 600;
+  color: #34495e;
+  margin-bottom: 15px;
+}
+
+.match-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 10px;
+}
+
+.match-column {
+  background-color: #fafafa;
+  border-radius: 10px;
+  padding: 15px;
+  border: 1px solid #ececec;
+  transition: all 0.2s ease;
+}
+
+.match-column:hover {
+  background-color: #fefefe;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.match-column h4 {
+  font-size: 1.1rem;
+  color: #2c3e50;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 6px;
+  margin-bottom: 10px;
+}
+
+.match-column p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.match-lineitems {
+  margin-top: 25px;
+}
+
+.match-lineitems h4 {
+  font-size: 1.1rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.match-lineitems table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.match-lineitems th,
+.match-lineitems td {
+  border: 1px solid #e6e6e6;
+  padding: 10px 12px;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.match-lineitems th {
+  background-color: #f0f4f8;
+  font-weight: 600;
+}
+
+.match-lineitems tr:nth-child(even) {
+  background-color: #fafcff;
+}
+
+.text-green {
+  color: #27ae60;
+  font-weight: 500;
+}
+
+.text-red {
+  color: #e74c3c;
+  font-weight: 500;
+}
+
+/* -------------------- */
+/* Download Button Style */
+/* -------------------- */
+
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+}
+
+.download-btn:hover {
+  background: linear-gradient(135deg, #0056b3, #008cff);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 123, 255, 0.3);
+}
+
+.download-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(0, 123, 255, 0.3);
+}
+
+
+
+
+
+/* 📱 Responsive adjustments */
+@media (max-width: 768px) {
+  .match-result-container {
+    padding: 18px;
+  }
+
+  .match-section {
+    grid-template-columns: 1fr;
+  }
+
+  .match-column {
+    padding: 12px;
+  }
+
+  .match-lineitems th,
+  .match-lineitems td {
+    font-size: 0.85rem;
+  }
+}
