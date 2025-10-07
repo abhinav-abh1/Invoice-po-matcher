@@ -28,3 +28,4 @@ You can see the result in a **table** and also **download it as a CSV**.
    
 4. To run the project:
    npm run dev
+
